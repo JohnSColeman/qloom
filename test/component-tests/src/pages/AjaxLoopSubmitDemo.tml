@@ -1,0 +1,10 @@
+<div>
+  <h1>AjaxFormLoop submit round-trip</h1>
+  <form t:type="form" t:id="form" t:zone="out">
+    <t:ajaxformloop t:source="items" t:value="item">
+      <span class="row"><input t:type="textfield" t:value="item.name" class="an"/></span>
+    </t:ajaxformloop>
+    <input type="submit" id="save" value="Save"/>
+  </form>
+  <t:zone t:id="out"><span id="result">${joined}</span></t:zone>
+</div>

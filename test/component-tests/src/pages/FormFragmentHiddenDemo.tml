@@ -1,0 +1,11 @@
+<div>
+  <h1>FormFragment (hidden)</h1>
+  <form t:type="form" t:id="form">
+    <t:errors/>
+    <input t:type="textfield" t:id="visibleField" t:validate="required"/>
+    <t:formfragment t:id="frag" t:visible="false">
+      <input t:type="textfield" t:id="hiddenField" t:validate="required"/>
+    </t:formfragment>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

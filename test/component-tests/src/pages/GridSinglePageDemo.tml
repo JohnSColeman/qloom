@@ -1,0 +1,4 @@
+<div>
+  <h1>Grid (single page)</h1>
+  <table t:type="grid" t:id="grid" t:source="items" t:include="name,city" t:add="note" t:row="currentItem"/>
+</div>

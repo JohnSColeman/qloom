@@ -1,0 +1,10 @@
+<div>
+  <h1>Submit Mode</h1>
+  <form t:type="form" t:id="form">
+    <input t:type="textfield" t:id="name" t:validate="required"/>
+    <t:errors/>
+    <input t:type="submit" t:id="go" id="go" t:value="literal:Save"/>
+    <input t:type="submit" t:id="cancelBtn" id="cancelBtn" t:value="literal:Cancel" t:mode="cancel"/>
+    <input t:type="submit" t:id="uncond" id="uncond" t:value="literal:Skip" t:mode="unconditional"/>
+  </form>
+</div>

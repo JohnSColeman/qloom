@@ -1,0 +1,4 @@
+<div>
+  <h1>InjectPage</h1>
+  <a href="#" t:type="eventlink" t:event="go" id="go">go to target</a>
+</div>

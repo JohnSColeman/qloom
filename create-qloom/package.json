@@ -1,0 +1,56 @@
+{
+  "name": "create-qloom",
+  "version": "0.1.0-beta.1",
+  "type": "module",
+  "bin": {
+    "create-qloom": "./bin/create-qloom.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./vite": {
+      "types": "./dist/vite-plugin.d.ts",
+      "default": "./dist/vite-plugin.js"
+    }
+  },
+  "dependencies": {
+    "@qloom/compiler": "workspace:*",
+    "@qloom/skills": "workspace:*"
+  },
+  "description": "The Qloom Vite plugin and project scaffolder (npm create qloom).",
+  "keywords": [
+    "Qloom",
+    "tapestry",
+    "tapestry5",
+    "spa",
+    "typescript",
+    "vite",
+    "vite-plugin",
+    "scaffold",
+    "create"
+  ],
+  "license": "Apache-2.0",
+  "author": "John Coleman",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnSColeman/qloom.git",
+    "directory": "create-qloom"
+  },
+  "homepage": "https://github.com/JohnSColeman/qloom#readme",
+  "bugs": "https://github.com/JohnSColeman/qloom/issues",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "template"
+  ]
+}

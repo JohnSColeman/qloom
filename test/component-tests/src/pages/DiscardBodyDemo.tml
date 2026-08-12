@@ -1,0 +1,4 @@
+<div>
+  <h1>DiscardBody mixin</h1>
+  <t:any t:element="article" t:mixins="discardbody">this body should be discarded</t:any>
+</div>

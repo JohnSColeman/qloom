@@ -1,0 +1,11 @@
+<div>
+  <h1>Label</h1>
+  <form t:type="form" t:id="form">
+    <label t:type="label" t:for="email">Email:</label>
+    <input t:type="textfield" t:id="email"/>
+    <label t:type="label" t:for="fullName"></label>
+    <input t:type="textfield" t:id="fullName"/>
+    <label t:type="label" t:for="checkInDate" class="date-label"></label>
+    <input t:type="textfield" t:id="checkInDate"/>
+  </form>
+</div>

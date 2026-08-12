@@ -1,0 +1,9 @@
+<div>
+  <h1>PropertyEditor</h1>
+  <form t:type="form" t:id="form">
+    <div t:type="propertyeditor" t:id="editor" t:object="person" t:property="firstName"/>
+    <div t:type="propertyeditor" t:id="editor2" t:object="person" t:property="middleName"/>
+    <div t:type="propertyeditor" t:id="editor3" t:object="person" t:property="lastName" placeholder="Surname"/>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

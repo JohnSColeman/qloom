@@ -1,0 +1,6 @@
+<div>
+  <h1>Trigger</h1>
+  <t:trigger t:event="decorate"/>
+  <p id="default-wrap"><t:trigger/></p>
+  <p id="unhandled-wrap"><t:trigger t:event="nohandler"/></p>
+</div>

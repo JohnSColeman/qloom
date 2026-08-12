@@ -1,0 +1,4 @@
+<div>
+  <h1>DevTool</h1>
+  <div t:type="devtool" id="devtool"></div>
+</div>

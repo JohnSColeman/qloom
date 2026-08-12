@@ -1,0 +1,93 @@
+{
+  "openapi": "3.0.3",
+  "info": { "title": "Hotel Booking", "version": "1.0.0" },
+  "paths": {
+    "/hotels": {
+      "get": {
+        "operationId": "searchHotels",
+        "parameters": [
+          { "name": "name", "in": "query", "required": false, "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "matching hotels",
+            "content": {
+              "application/json": {
+                "schema": { "type": "array", "items": { "$ref": "#/components/schemas/Hotel" } }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/hotels/{id}": {
+      "get": {
+        "operationId": "getHotel",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "the hotel",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Hotel" } } }
+          }
+        }
+      }
+    },
+    "/auth/signin": {
+      "post": {
+        "operationId": "authenticate",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["username", "password"],
+                "properties": {
+                  "username": { "type": "string" },
+                  "password": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "the authenticated user",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/User" } } }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Hotel": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "type": "integer" },
+          "name": { "type": "string" },
+          "address": { "type": "string" },
+          "city": { "type": "string" },
+          "state": { "type": "string" },
+          "zip": { "type": "string" },
+          "country": { "type": "string" },
+          "stars": { "type": "integer" },
+          "price": { "type": "number" }
+        }
+      },
+      "User": {
+        "type": "object",
+        "required": ["id", "username"],
+        "properties": {
+          "id": { "type": "integer" },
+          "username": { "type": "string" },
+          "fullname": { "type": "string" },
+          "email": { "type": "string" }
+        }
+      }
+    }
+  }
+}

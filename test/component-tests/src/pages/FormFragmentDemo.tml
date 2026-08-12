@@ -1,0 +1,9 @@
+<div>
+  <h1>FormFragment</h1>
+  <form t:type="form" t:id="form">
+    <t:formfragment t:id="frag" t:visible="showExtra">
+      <input t:type="textfield" t:id="extra"/>
+    </t:formfragment>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

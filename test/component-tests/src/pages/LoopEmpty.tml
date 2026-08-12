@@ -1,0 +1,5 @@
+<div>
+  <h1>Empty Loop</h1>
+  <p id="first"><t:loop source="emptyList" value="value">${value}</t:loop></p>
+  <p id="third"><t:loop source="emptyList" value="value">${value}</t:loop></p>
+</div>

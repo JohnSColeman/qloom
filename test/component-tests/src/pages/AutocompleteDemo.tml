@@ -1,0 +1,8 @@
+<div>
+  <h1>Autocomplete</h1>
+  <form t:type="form" t:id="form">
+    <input t:type="textfield" t:id="city" t:value="city" t:mixins="autocomplete" t:minChars="2" t:maxSuggestions="2"/>
+    <input t:type="textfield" t:id="fruit" t:value="fruit" t:mixins="autocomplete" t:minChars="1" t:debounce="50"/>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

@@ -1,0 +1,18 @@
+<div>
+  <h1>Loop Element/Empty</h1>
+
+  <!-- element="li": each iteration's body is wrapped in an <li> -->
+  <ul id="wrapped"><t:loop source="items" value="v" element="li"><span class="cell">${v}</span></t:loop></ul>
+
+  <!-- empty source + <p:empty> block: the block renders, the body does not -->
+  <div id="emptyblock"><t:loop source="none" value="v"><p:empty><span class="noitems">No items</span></p:empty><span class="row">${v}</span></t:loop></div>
+
+  <!-- non-empty source: the <p:empty> block is NOT rendered, rows are -->
+  <div id="nonemptyblock"><t:loop source="items" value="v"><p:empty><span class="noitems2">No items</span></p:empty><span class="row2">${v}</span></t:loop></div>
+
+  <!-- element + empty together, empty source: neither wrapper nor rows, only the empty block -->
+  <ul id="wrappedempty"><t:loop source="none" value="v" element="li"><p:empty><span class="noitems3">Nothing</span></p:empty><span class="cell3">${v}</span></t:loop></ul>
+
+  <!-- element with an empty source and no empty block: renders nothing at all -->
+  <ul id="wrappednone"><t:loop source="none" value="v" element="li"><span class="cell4">${v}</span></t:loop></ul>
+</div>

@@ -1,0 +1,5 @@
+<div>
+  <h1>FontAwesomeIcon</h1>
+  <i t:type="fontawesomeicon" t:icon="star" id="icon"></i>
+  <i t:type="fontawesomeicon" t:icon="user" id="icon2" title="Profile" data-role="avatar" class="ignored-class"></i>
+</div>

@@ -1,0 +1,9 @@
+<div>
+  <h1>Select Blank</h1>
+  <form t:type="form" t:id="form">
+    <label>Always <select t:type="select" t:id="always" t:model="literal:a,b,c" t:blankOption="literal:always" t:blankLabel="literal:- pick -"/></label>
+    <label>AlwaysNoLabel <select t:type="select" t:id="alwaysbare" t:model="literal:a,b,c" t:blankOption="literal:always"/></label>
+    <label>Never <select t:type="select" t:id="never" t:model="literal:a,b,c" t:blankOption="literal:never"/></label>
+    <label>Auto <select t:type="select" t:id="auto" t:model="literal:a,b,c"/></label>
+  </form>
+</div>

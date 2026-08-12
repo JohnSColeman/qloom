@@ -1,0 +1,6 @@
+<div>
+  <h1>Grid</h1>
+  <table t:type="grid" t:id="grid" t:source="items" t:include="name,city,price" t:rowsPerPage="2" t:row="currentItem">
+    <p:priceCell>$${currentItem.price}</p:priceCell>
+  </table>
+</div>

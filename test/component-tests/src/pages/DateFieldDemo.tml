@@ -1,0 +1,7 @@
+<div>
+  <h1>DateField</h1>
+  <form t:type="form" t:id="form">
+    <label>Check-in <input t:type="datefield" t:id="checkin"/></label>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

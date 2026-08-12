@@ -1,0 +1,9 @@
+<div>
+  <h1>BeanDisplay cases</h1>
+  <div id="bd-main" class="hotel-details" t:type="beandisplay" t:object="hotel"
+       t:include="fullName,starRating,oceanView,nightlyRate">
+    <p:starRating><span id="bd-stars-custom">five stars</span></p:starRating>
+  </div>
+  <div id="bd-exclude" t:type="beandisplay" t:object="secret" t:exclude="secretId"/>
+  <div id="bd-empty" t:type="beandisplay" t:object="missing"/>
+</div>

@@ -1,0 +1,15 @@
+<div>
+  <h1>Hotels</h1>
+  <p id="tagline">${message:tagline}</p>
+  <p id="missing">${message:no-such-key}</p>
+  <p id="cond-then"><t:if test="hasHotels">yes<p:else>no</p:else></t:if></p>
+  <p id="cond-else"><t:if test="never">a<p:else>b</p:else></t:if></p>
+  <ul id="hotel-list">
+    <t:loop source="hotels" value="hotel">
+      <li>
+        <a href="#" t:type="pagelink" t:page="hotel" t:context="hotel.id">${hotel.name}</a>
+        — ${hotel.city} (${hotel.stars}★) $${hotel.price}
+      </li>
+    </t:loop>
+  </ul>
+</div>

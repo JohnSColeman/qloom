@@ -1,0 +1,4 @@
+<div>
+  <h1>PageActivationContext</h1>
+  <p id="pactx">id=${id} kind=${kind}</p>
+</div>

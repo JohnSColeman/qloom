@@ -1,0 +1,4 @@
+<div>
+  <h1>Output</h1>
+  <p id="out"><span t:type="output" t:value="amount"></span></p>
+</div>

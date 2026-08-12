@@ -1,0 +1,45 @@
+{
+  "name": "@qloom/core",
+  "version": "0.1.0-beta.1",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "description": "Qloom engine core: the render-phase state machine, event bubbling, Zones reconciler, bindings, message catalogue, and error reporting.",
+  "keywords": [
+    "Qloom",
+    "tapestry",
+    "tapestry5",
+    "spa",
+    "typescript",
+    "vite",
+    "engine",
+    "reconciler"
+  ],
+  "license": "Apache-2.0",
+  "author": "John Coleman",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnSColeman/qloom.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/JohnSColeman/qloom#readme",
+  "bugs": "https://github.com/JohnSColeman/qloom/issues",
+  "publishConfig": {
+    "access": "public",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}

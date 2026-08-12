@@ -1,0 +1,13 @@
+<div>
+  <h1>PropertyDisplay cases</h1>
+  <p id="pd-count"><span t:type="propertydisplay" t:object="bean" t:property="count"></span></p>
+  <p id="pd-active"><span t:type="propertydisplay" t:object="bean" t:property="active"></span></p>
+  <p id="pd-title"><span t:type="propertydisplay" t:object="bean" t:property="title"></span></p>
+  <p id="pd-nil"><span t:type="propertydisplay" t:object="bean" t:property="nil"></span></p>
+  <p id="pd-missing"><span t:type="propertydisplay" t:object="bean" t:property="nope"></span></p>
+  <p id="pd-nullobj"><span t:type="propertydisplay" t:object="missingObj" t:property="name"></span></p>
+  <a href="#" t:type="eventlink" t:event="poison" t:zone="pdZone" id="pd-poison">poison</a>
+  <t:zone t:id="pdZone">
+    <p id="pd-live"><span t:type="propertydisplay" t:object="live" t:property="name"></span></p>
+  </t:zone>
+</div>

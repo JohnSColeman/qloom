@@ -1,0 +1,9 @@
+<div>
+  <h1 id="catalog">Qloom component-tests</h1>
+  <ul>
+    <li><a href="/loop-empty" t:type="pagelink" t:page="loop-empty">Loop — empty source</a></li>
+    <li><a href="/loop-null" t:type="pagelink" t:page="loop-null">Loop — null source</a></li>
+    <li><a href="/loop-generic" t:type="pagelink" t:page="loop-generic">Loop — generic</a></li>
+    <li><a href="/if-unless" t:type="pagelink" t:page="if-unless">If / Unless / Delegate</a></li>
+  </ul>
+</div>

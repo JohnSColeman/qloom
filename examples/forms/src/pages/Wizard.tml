@@ -1,0 +1,16 @@
+<div>
+  <h1>Wizard</h1>
+  <div t:type="zone" t:id="stageZone">
+    <t:delegate to="step"/>
+  </div>
+
+  <t:block t:id="stepOne">
+    <p id="which">Step one: your details</p>
+    <p><a href="#" t:type="eventlink" t:event="next" t:zone="stageZone" id="next">Next</a></p>
+  </t:block>
+
+  <t:block t:id="stepTwo">
+    <p id="which">Step two: confirm</p>
+    <p><a href="#" t:type="eventlink" t:event="back" t:zone="stageZone" id="back">Back</a></p>
+  </t:block>
+</div>

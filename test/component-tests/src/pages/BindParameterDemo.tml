@@ -1,0 +1,5 @@
+<div>
+  <h1>@BindParameter</h1>
+  <input t:type="textfield" t:id="testmixin" t:value="myproperty" t:mixins="echovalue"/>
+  <div id="mypropertyoutput">${myproperty}</div>
+</div>

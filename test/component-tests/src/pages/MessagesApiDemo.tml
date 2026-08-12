@@ -1,0 +1,6 @@
+<div>
+  <h1 id="ma-h">${message:appName}</h1>
+  <p id="apigreeting">${message:apiGreeting}</p>
+  <t:localeselector/>
+  <a href="#" t:type="eventlink" t:event="reload">Reload messages</a>
+</div>

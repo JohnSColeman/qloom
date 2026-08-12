@@ -1,0 +1,15 @@
+<div>
+  <h1>Validation</h1>
+  <form t:type="form" t:id="form" t:zone="result">
+    <div t:type="errors"/>
+    <input t:type="textfield" t:id="username"/>
+    <input t:type="textfield" t:id="email"/>
+    <input t:type="passwordfield" t:id="password"/>
+    <input t:type="passwordfield" t:id="verify"/>
+    <textarea t:type="textarea" t:id="bio" t:validate="required"/>
+    <input type="submit" value="Go"/>
+  </form>
+  <t:zone t:id="result">
+    <p id="done">${done}</p>
+  </t:zone>
+</div>

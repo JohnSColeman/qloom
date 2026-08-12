@@ -1,0 +1,11 @@
+<div>
+  <h1>Star Wars Films</h1>
+  <t:if test="hasError">
+    <p class="error" data-testid="error">${error}</p>
+  </t:if>
+  <ul data-testid="films">
+    <t:loop source="films" value="film">
+      <li data-testid="film">${film.episodeID} — ${film.title} (${film.releaseDate})</li>
+    </t:loop>
+  </ul>
+</div>

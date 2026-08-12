@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+<head>
+	<title>Tapestry 5 Hotel Booking - ${pageTitle}</title>
+</head>
+<body id="homepage">
+	<div class="wrapper bs">
+		<ul class="nav">
+			<t:security.authenticated>
+				<li><span>Welcome ${user?.fullName}</span></li>
+				<li>
+					<a href="#" t:type="pageLink" t:page="search">Search</a>
+				</li>
+				<li>
+					<a href="#" t:type="pageLink" t:page="settings">Settings</a>
+				</li>
+				<li class="last">
+					<a href="#" t:type="actionlink" t:id="logout" id="logout">Log out</a>
+				</li>
+			</t:security.authenticated>
+		</ul>
+
+		<div id="top">
+
+			<h1><img src="${context:/static/tapestry_s.png}" alt="Tapestry" id="tapestry" /></h1>
+
+			<div id="aside">Welcome to Tapestry 5 Hotel Booking demonstration application !</div>
+
+			<div class="clearer"></div>
+
+		</div>
+
+		<div id="bar">
+			<strong>With Tapestry 5 Hotel Booking, Feel at Home!</strong>
+		</div>
+
+		<div class="col">
+			<h3 class="first">Why you should choose Tapestry 5 ?</h3>
+			<p>
+				<t:delegate to="sidebar" />
+			</p>
+		</div>
+
+		<div id="content" class="big-col">
+
+			<t:body />
+			<div class="clearer"></div>
+
+		</div>
+
+		<div class="clearer"></div>
+
+		<div id="footer">Created with <strong>Qloom</strong></div>
+
+	</div>
+</body>
+</html>

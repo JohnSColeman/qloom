@@ -1,0 +1,9 @@
+<div>
+  <h1>Hidden Edge</h1>
+  <form t:type="form" t:id="form">
+    <input t:type="hidden" t:id="markup"/>
+    <input t:type="hidden" t:id="count"/>
+    <input t:type="hidden" t:id="blank"/>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

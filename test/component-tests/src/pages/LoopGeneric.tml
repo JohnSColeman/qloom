@@ -1,0 +1,9 @@
+<div>
+  <h1>Generic Loop</h1>
+  <t:loop source="ints" value="n" index="i">
+    <span id="int_${i}">${n}</span>
+  </t:loop>
+  <t:loop source="people" value="person" index="j">
+    <span id="person_${j}">${person}</span>
+  </t:loop>
+</div>

@@ -1,0 +1,46 @@
+{
+  "name": "@qloom/compiler",
+  "version": "0.1.0-beta.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "graphql": "^16.9.0",
+    "htmlparser2": "^9.1.0"
+  },
+  "description": "Qloom's .tml → render-program compiler and OpenAPI/GraphQL → typed-client generation.",
+  "keywords": [
+    "Qloom",
+    "tapestry",
+    "tapestry5",
+    "spa",
+    "typescript",
+    "vite",
+    "compiler",
+    "codegen"
+  ],
+  "license": "Apache-2.0",
+  "author": "John Coleman",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnSColeman/qloom.git",
+    "directory": "packages/compiler"
+  },
+  "homepage": "https://github.com/JohnSColeman/qloom#readme",
+  "bugs": "https://github.com/JohnSColeman/qloom/issues",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ]
+}

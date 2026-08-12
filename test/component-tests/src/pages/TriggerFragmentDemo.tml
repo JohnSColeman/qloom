@@ -1,0 +1,11 @@
+<div>
+  <h1>TriggerFragment</h1>
+  <form t:type="form" t:id="form">
+    <t:errors/>
+    <label><input t:type="checkbox" t:id="sameAddress" t:value="sameAddress" t:mixins="triggerfragment" t:fragment="literal:shipping" t:invert="true"/> Same as billing</label>
+    <t:formfragment t:id="shipping" t:visible="true">
+      <input t:type="textfield" t:id="shippingCity" t:validate="required"/>
+    </t:formfragment>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

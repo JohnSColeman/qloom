@@ -1,0 +1,6 @@
+<div>
+  <h1>ProgressiveDisplay</h1>
+  <t:progressivedisplay t:id="pd">
+    <p id="real">Real content</p>
+  </t:progressivedisplay>
+</div>

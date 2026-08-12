@@ -1,0 +1,6 @@
+<div>
+  <h1 id="thanks">Thanks, ${who}!</h1>
+  <p id="checkin">Check-in: ${checkin}</p>
+  <p id="smoking">Smoking: ${smoking}</p>
+  <p><a href="#" t:type="pagelink" t:page="signup">Back</a></p>
+</div>

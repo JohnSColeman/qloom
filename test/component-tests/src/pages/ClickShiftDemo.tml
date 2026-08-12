@@ -1,0 +1,8 @@
+<div class="click-shift">
+  <h1>Click shift</h1>
+  <form t:type="form" t:id="form">
+    <div class="field"><input t:type="textfield" t:id="alpha" t:validate="required"/></div>
+    <div class="field"><input t:type="textfield" t:id="beta" t:validate="required"/></div>
+    <button type="submit" id="go">Go</button>
+  </form>
+</div>

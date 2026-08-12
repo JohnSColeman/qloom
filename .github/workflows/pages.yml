@@ -1,0 +1,54 @@
+name: Deploy hotel-booking demo to GitHub Pages
+
+# Builds the reference hotel-booking app (a fully client-side Qloom SPA — its API
+# is an in-browser mock) and publishes it to GitHub Pages so repo visitors can try
+# it live. The base path is derived from the repo name, so this works unchanged
+# whatever the repository is called.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+# Least-privilege token the Pages deploy needs.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time; let an in-progress publish finish rather than cancelling.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4 # reads the pnpm version from packageManager
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build # builds create-qloom (the Vite plugin) + typechecks packages
+      - name: Build the demo under the repo's Pages base path
+        env:
+          # e.g. "/qloom/" for github.com/<owner>/qloom → <owner>.github.io/qloom/
+          BASE_PATH: /${{ github.event.repository.name }}/
+        run: pnpm --filter @qloom/reference-hotel-booking build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: reference/hotel-booking/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,9 @@
+<div>
+  <h1>Double Submit</h1>
+  <form t:type="form" t:id="form">
+    <input t:type="textfield" t:id="name"/>
+    <input type="submit" id="submit" value="Go"/>
+    <t:linksubmit id="link">Submit Link</t:linksubmit>
+  </form>
+  <p id="count">0</p>
+</div>

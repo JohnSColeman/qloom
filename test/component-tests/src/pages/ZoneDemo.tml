@@ -1,0 +1,15 @@
+<div>
+  <h1>Zone Demo</h1>
+  <a href="#" t:type="eventlink" t:event="select" t:zone="nameZone" id="select-link">Select "Mr. &lt;Roboto&gt;"</a>
+  <a href="#" t:type="eventlink" t:event="updateEmpty" t:zone="messageZone" id="empty-link">Update zone with empty body</a>
+  <t:zone t:id="nameZone">
+    <p id="status">${statusText}</p>
+  </t:zone>
+  <t:zone t:id="messageZone">
+    <p id="zone-update-message">${message}</p>
+  </t:zone>
+  <a href="#" t:type="eventlink" t:event="bump" t:zone="counterZone" id="bump-link">bump</a>
+  <t:zone t:id="counterZone">
+    <p id="counter">${count}</p>
+  </t:zone>
+</div>

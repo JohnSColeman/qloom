@@ -1,0 +1,4 @@
+<div>
+  <h1>Submit Result</h1>
+  <p id="result">Submitted: ${who}</p>
+</div>

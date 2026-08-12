@@ -1,0 +1,7 @@
+<div>
+  <h1>Checklist</h1>
+  <form t:type="form" t:id="form">
+    <t:checklist t:id="colors" t:model="literal:Red,Green,Blue" t:selected="selected"/>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

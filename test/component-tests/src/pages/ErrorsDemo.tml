@@ -1,0 +1,9 @@
+<div>
+  <h1>Errors</h1>
+  <form t:type="form" t:id="form">
+    <t:errors/>
+    <input t:type="textfield" t:id="name" t:validate="required"/>
+    <input t:type="textfield" t:id="email" t:validate="required"/>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

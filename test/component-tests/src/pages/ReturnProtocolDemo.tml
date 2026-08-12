@@ -1,0 +1,6 @@
+<div>
+  <h1>Return-value protocol</h1>
+  <t:conditionalbody t:id="plain">BODY</t:conditionalbody>
+  <t:conditionalbody t:id="forced" t:mixins="forcebody">BODY</t:conditionalbody>
+  <p id="loop"><t:countbegin t:mixins="repeatonce"/></p>
+</div>

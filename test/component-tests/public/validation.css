@@ -1,0 +1,10 @@
+.t-error { border: 2px solid #c30; }
+.t-error-icon { color: #c30; margin-left: 4px; }
+/* JS positions the bubble above the field (position:fixed + viewport coords). */
+.t-error-popup { position: fixed; z-index: 10; background: #222; color: #fff; padding: 2px 6px; border-radius: 4px; white-space: nowrap; }
+.t-error-popup-close { margin-left: 8px; cursor: pointer; color: #f66; font-weight: bold; }
+/* click-shift repro: block error icon + stacked fields, so a field's blur-time
+   decoration reflows the submit button downward (mirrors the Magento Luma theme). */
+.click-shift .field { display: block; }
+.click-shift .t-error-icon { display: block; height: 40px; margin: 0; }
+.click-shift #go { display: block; margin-top: 8px; height: 20px; }

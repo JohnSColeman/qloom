@@ -1,0 +1,6 @@
+<div>
+  <h1>PageLink Demo</h1>
+  <a href="#" t:type="pagelink" t:page="pagelink-target" t:context="literal:hello" id="with-context">literal context</a>
+  <a href="#" t:type="pagelink" t:page="pagelink-target" id="no-context">no context</a>
+  <a href="#" t:type="pagelink" t:page="pagelink-target" t:context="pair" id="multi-context">multi context</a>
+</div>

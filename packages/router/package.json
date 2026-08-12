@@ -1,0 +1,48 @@
+{
+  "name": "@qloom/router",
+  "version": "0.1.0-beta.1",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@qloom/core": "workspace:*",
+    "@qloom/runtime": "workspace:*"
+  },
+  "description": "Qloom router: URL ↔ page resolution with onActivate/onPassivate reconstructable state.",
+  "keywords": [
+    "Qloom",
+    "tapestry",
+    "tapestry5",
+    "spa",
+    "typescript",
+    "vite",
+    "router"
+  ],
+  "license": "Apache-2.0",
+  "author": "John Coleman",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnSColeman/qloom.git",
+    "directory": "packages/router"
+  },
+  "homepage": "https://github.com/JohnSColeman/qloom#readme",
+  "bugs": "https://github.com/JohnSColeman/qloom/issues",
+  "publishConfig": {
+    "access": "public",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}

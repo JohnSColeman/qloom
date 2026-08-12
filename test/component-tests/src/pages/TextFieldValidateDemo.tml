@@ -1,0 +1,10 @@
+<div>
+  <h1>TextField Validate</h1>
+  <form t:type="form" t:id="form">
+    <t:errors/>
+    <label id="code-label"><span id="code-text">Code</span> <input t:type="textfield" t:id="code" t:validate="minlength=3,maxlength=6" placeholder="3 to 6"/></label>
+    <input t:type="textfield" t:id="nick" disabled="disabled"/>
+    <input t:type="textfield" t:id="raw"/>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

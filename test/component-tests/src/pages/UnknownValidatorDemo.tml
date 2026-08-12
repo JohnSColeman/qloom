@@ -1,0 +1,7 @@
+<div>
+  <h1>Unknown validator</h1>
+  <form t:type="form" t:id="form">
+    <input t:type="textfield" t:id="name" t:validate="bogus"/>
+    <input type="submit" value="Go"/>
+  </form>
+</div>

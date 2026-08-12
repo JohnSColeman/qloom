@@ -1,0 +1,10 @@
+<div>
+  <h1>Home</h1>
+  <p>Visits: <span id="visits">${visits}</span> (persisted in localStorage across reloads)</p>
+  <p>Flash: <span id="flash">${flashMessage}</span></p>
+  <p>Demo SSO exists: <span id="demo-exists">${demoExists}</span></p>
+  <p><a href="#" t:type="eventlink" t:event="notify" id="notify">Set flash</a></p>
+  <p><a href="#" t:type="eventlink" t:event="createDemo" id="create-demo">Create demo SSO</a></p>
+  <p><a href="#" t:type="pagelink" t:page="home" id="home-again">Reload home</a></p>
+  <p><a href="#" t:type="pagelink" t:page="counter" id="to-counter">Open counter</a></p>
+</div>

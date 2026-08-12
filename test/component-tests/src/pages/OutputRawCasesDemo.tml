@@ -1,0 +1,11 @@
+<div>
+  <h1>OutputRaw cases</h1>
+  <p id="raw-bold"><span t:type="outputraw" t:value="markup"></span></p>
+  <p id="raw-entity"><span t:type="outputraw" t:value="entity"></span></p>
+  <p id="raw-null"><span t:type="outputraw" t:value="nothing"></span></p>
+  <p id="raw-multi"><span t:type="outputraw" t:value="multi"></span></p>
+  <a href="#" t:type="eventlink" t:event="swap" t:zone="rawZone" id="raw-swap">swap</a>
+  <t:zone t:id="rawZone">
+    <p id="raw-live"><span t:type="outputraw" t:value="live"></span></p>
+  </t:zone>
+</div>

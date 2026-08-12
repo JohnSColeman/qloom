@@ -1,0 +1,15 @@
+<div>
+  <h1>Search</h1>
+  <form t:type="form" t:zone="results" t:id="searchForm">
+    <input t:type="textfield" t:id="query"/>
+    <input type="submit" value="Search" id="go"/>
+  </form>
+  <t:zone t:id="results">
+    <p id="count">${results.length} result(s)</p>
+    <ul id="result-list">
+      <t:loop source="results" value="currentHotel">
+        <li class="result">${currentHotel.name}</li>
+      </t:loop>
+    </ul>
+  </t:zone>
+</div>

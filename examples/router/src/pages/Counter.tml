@@ -1,0 +1,6 @@
+<div>
+  <h1>Counter</h1>
+  <p>Count: <span id="count">${count}</span></p>
+  <p><a href="#" t:type="eventlink" t:event="increment" id="inc">Increment</a></p>
+  <p><a href="#" t:type="pagelink" t:page="home" id="to-home">Back home</a></p>
+</div>

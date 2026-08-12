@@ -1,0 +1,4 @@
+<div>
+  <h1>Tree (empty)</h1>
+  <t:tree t:id="tree" t:model="model"/>
+</div>

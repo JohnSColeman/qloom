@@ -1,0 +1,4 @@
+<div>
+  <h1>DateField Result</h1>
+  <p id="result">Check-in: ${who}</p>
+</div>

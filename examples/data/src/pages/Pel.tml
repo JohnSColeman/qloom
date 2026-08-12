@@ -1,0 +1,7 @@
+<div>
+  <h1>PEL</h1>
+  <p id="pel-method">${label()}</p>
+  <ul id="pel-range">
+    <t:loop source="1..pageCount" value="n"><li>page ${n}</li></t:loop>
+  </ul>
+</div>

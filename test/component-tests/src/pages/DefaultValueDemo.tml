@@ -1,0 +1,7 @@
+<div>
+  <h1 id="dv-h">default value</h1>
+  <!-- all three params unbound → defaults come from each param's value= -->
+  <p id="row-unbound"><span t:type="defaultvaluething"/></p>
+  <!-- label explicitly bound → the binding wins over its value= default -->
+  <p id="row-bound"><span t:type="defaultvaluething" t:label="boundLabel"/></p>
+</div>

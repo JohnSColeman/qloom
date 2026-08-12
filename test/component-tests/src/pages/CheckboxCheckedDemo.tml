@@ -1,0 +1,7 @@
+<div>
+  <h1>Checkbox (pre-checked)</h1>
+  <form t:type="form" t:id="form">
+    <label>Agree <input t:type="checkbox" t:id="agree"/></label>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

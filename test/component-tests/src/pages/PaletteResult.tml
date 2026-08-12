@@ -1,0 +1,4 @@
+<div>
+  <h1>Palette Result</h1>
+  <p id="chosen">${chosen}</p>
+</div>

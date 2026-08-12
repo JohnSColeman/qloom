@@ -1,0 +1,4 @@
+<div>
+  <h1>Select Result</h1>
+  <p id="result">Rows: ${who}</p>
+</div>

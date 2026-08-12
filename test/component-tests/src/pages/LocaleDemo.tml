@@ -1,0 +1,7 @@
+<div>
+  <h1 id="loc-h">Locale</h1>
+  <p id="greeting">${message:greeting}</p>
+  <p id="tagline">${message:tagline}</p>
+  <p id="onlyen">${message:onlyEn}</p>
+  <t:localeselector/>
+</div>

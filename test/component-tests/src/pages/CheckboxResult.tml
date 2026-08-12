@@ -1,0 +1,4 @@
+<div>
+  <h1>Checkbox Result</h1>
+  <p id="value">Checkbox's value: ${who}</p>
+</div>

@@ -1,0 +1,4 @@
+<div>
+  <h1>@Mixin dup</h1>
+  <t:dupthing t:mixins="markone"/>
+</div>

@@ -1,0 +1,50 @@
+name: Publish to npm
+
+# Publishes the @qloom/* packages and create-qloom to npmjs.com, under a dist-tag
+# (default "beta"). Runs on demand (Actions → this workflow → Run workflow) or when
+# a GitHub Release is published. pnpm rewrites workspace:* deps to the real version
+# and skips the private packages (examples, reference, the monorepo root).
+#
+# Prerequisites (one-time, done outside this repo):
+#   1. Own the @qloom scope on npmjs.com (an npm org or user named "qloom").
+#   2. Create an npm *automation* access token with publish rights.
+#   3. Add it as a repository secret named NPM_TOKEN
+#      (Settings → Secrets and variables → Actions → New repository secret).
+# Each run publishes the versions currently in package.json; bump them before
+# re-running, since npm rejects republishing an existing version.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dist-tag:
+        description: "npm dist-tag to publish under"
+        required: true
+        default: beta
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4 # reads the pnpm version from packageManager
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+          registry-url: https://registry.npmjs.org # writes the auth .npmrc pnpm reads
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build # builds create-qloom/compiler dist + typechecks packages
+      - name: Correctness gate (nothing publishes on red)
+        run: pnpm --filter @qloom/compiler --filter @qloom/data --filter @qloom/skills --filter create-qloom test
+      - name: Publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: >
+          pnpm -r --filter "./packages/*" --filter create-qloom publish
+          --access public --no-git-checks
+          --tag ${{ github.event.inputs.dist-tag || 'beta' }}

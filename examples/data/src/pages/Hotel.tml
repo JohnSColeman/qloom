@@ -1,0 +1,8 @@
+<div>
+  <t:if test="hotel">
+    <h1 id="hotel-name">${hotel.name}</h1>
+    <p id="hotel-addr">${hotel.address}, ${hotel.city}, ${hotel.country}</p>
+    <p id="hotel-meta">${hotel.stars} stars — $${hotel.price} / night</p>
+  </t:if>
+  <p><a href="#" t:type="pagelink" t:page="hotels">Back to list</a></p>
+</div>

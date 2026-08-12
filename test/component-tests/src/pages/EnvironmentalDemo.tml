@@ -1,0 +1,7 @@
+<div>
+  <h1>@Environmental</h1>
+  <t:renderableprovider>
+    <p id="user">RenderableUser:[<t:renderableuser/>]</p>
+    <input t:type="textfield" t:id="stamp" t:mixins="envstamp"/>
+  </t:renderableprovider>
+</div>

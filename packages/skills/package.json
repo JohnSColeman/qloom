@@ -1,0 +1,50 @@
+{
+  "name": "@qloom/skills",
+  "version": "0.1.0-beta.1",
+  "type": "module",
+  "description": "Qloom's authoring skills for AI coding agents plus the bundled Tapestry template schema, with a CLI to sync them into a project.",
+  "bin": {
+    "qloom-skills": "./bin/qloom-skills.mjs"
+  },
+  "exports": {
+    "./sync": {
+      "types": "./sync.d.ts",
+      "default": "./sync.mjs"
+    },
+    "./schema/*": "./schema/*"
+  },
+  "files": [
+    "skills",
+    "schema",
+    "sync.mjs",
+    "sync.d.ts",
+    "bin"
+  ],
+  "scripts": {
+    "bundle": "node scripts/bundle.mjs",
+    "prepublishOnly": "node scripts/bundle.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "Qloom",
+    "tapestry",
+    "tapestry5",
+    "spa",
+    "typescript",
+    "vite",
+    "ai",
+    "skills"
+  ],
+  "license": "Apache-2.0",
+  "author": "John Coleman",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnSColeman/qloom.git",
+    "directory": "packages/skills"
+  },
+  "homepage": "https://github.com/JohnSColeman/qloom#readme",
+  "bugs": "https://github.com/JohnSColeman/qloom/issues",
+  "publishConfig": {
+    "access": "public"
+  }
+}

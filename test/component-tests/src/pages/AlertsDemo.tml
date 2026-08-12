@@ -1,0 +1,4 @@
+<div>
+  <h1>Alerts</h1>
+  <div t:type="alerts" id="alerts"></div>
+</div>

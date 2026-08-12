@@ -1,0 +1,7 @@
+<div>
+  <h1>Hotels (grid)</h1>
+  <table t:type="grid" t:id="hotelGrid" t:source="hotels" t:include="name,city,price" t:rowsPerPage="2" t:row="currentHotel">
+    <p:priceCell>$${currentHotel.price}</p:priceCell>
+    <p:empty><p id="empty">No hotels.</p></p:empty>
+  </table>
+</div>

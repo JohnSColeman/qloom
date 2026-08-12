@@ -1,0 +1,34 @@
+{
+  "name": "qloom-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.3",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "tsc -b --clean",
+    "typecheck": "tsc -b",
+    "dev": "pnpm --filter @qloom/example-hello dev",
+    "test:reference-app": "pnpm build && pnpm --filter @qloom/reference-hotel-booking test",
+    "uat:reference-app": "pnpm build && pnpm --filter @qloom/reference-hotel-booking dev",
+    "test:data": "pnpm build && pnpm --filter @qloom/example-data test",
+    "test:forms": "pnpm build && pnpm --filter @qloom/example-forms test",
+    "test:graphql": "pnpm build && pnpm --filter @qloom/example-graphql test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.6.3",
+    "vite": "8.0.5"
+  },
+  "description": "Qloom — a faithful, client-side port of Apache Tapestry 5's programming model to TypeScript.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnSColeman/qloom.git"
+  },
+  "homepage": "https://github.com/JohnSColeman/qloom#readme",
+  "bugs": "https://github.com/JohnSColeman/qloom/issues"
+}

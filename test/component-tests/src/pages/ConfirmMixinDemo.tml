@@ -1,0 +1,4 @@
+<div>
+  <h1>Confirm mixin</h1>
+  <a t:type="actionlink" t:id="go" t:mixins="confirm" t:message="literal:Really do this?">Click This</a>
+</div>

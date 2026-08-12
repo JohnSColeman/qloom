@@ -1,0 +1,4 @@
+<div>
+  <a href="#" t:type="eventlink" t:event="bump" t:zone="fz" id="refresh">refresh</a>
+  <t:zone t:id="fz"><form t:type="form" t:id="f"><input t:type="textfield" t:id="name"/><p id="count">${count}</p></form></t:zone>
+</div>

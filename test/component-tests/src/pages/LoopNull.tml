@@ -1,0 +1,4 @@
+<div>
+  <h1>Null-source Loop</h1>
+  <p id="second"><t:loop source="nullSource" value="value">${value}</t:loop></p>
+</div>

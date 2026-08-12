@@ -1,0 +1,4 @@
+<div>
+  <h1>BeanEditor</h1>
+  <form t:type="beaneditform" t:id="editor" t:object="person" t:include="firstName,lastName"/>
+</div>

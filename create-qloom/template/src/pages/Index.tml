@@ -1,0 +1,10 @@
+<div>
+  <h1>${message:greeting}</h1>
+  <p>${message:tagline}</p>
+  <p>
+    <a href="#" t:type="eventlink" t:event="increment" t:zone="counter">Increment</a>
+  </p>
+  <t:zone t:id="counter">
+    <p id="count">Count: ${count}</p>
+  </t:zone>
+</div>

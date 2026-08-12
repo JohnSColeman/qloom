@@ -1,0 +1,5 @@
+# Generated at publish time by scripts/bundle.mjs (copies of repo-root
+# .agents/skills and schema/). The canonical sources live at the repo root; in-repo
+# the package reads them directly.
+/skills/
+/schema/

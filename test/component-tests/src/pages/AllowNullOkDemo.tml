@@ -1,0 +1,4 @@
+<div>
+  <h1 id="an-ok">allowNull (ok)</h1>
+  <span t:type="allownullparam" t:strict="present" t:lax="nothing"/>
+</div>

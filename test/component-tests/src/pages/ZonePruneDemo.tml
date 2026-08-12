@@ -1,0 +1,5 @@
+<div>
+  <t:zone t:id="za"><span>a</span></t:zone>
+  <t:zone t:id="zb"><span>b</span></t:zone>
+  <a href="#" t:type="pagelink" t:page="zone-prune-target" id="go">go</a>
+</div>

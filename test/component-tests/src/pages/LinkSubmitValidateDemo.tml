@@ -1,0 +1,7 @@
+<div>
+  <h1>LinkSubmit (validated)</h1>
+  <form t:type="form" t:id="form">
+    <input t:type="textfield" t:id="name" t:validate="required"/>
+    <a t:type="linksubmit" t:id="go" href="#" id="link-submit">Submit</a>
+  </form>
+</div>

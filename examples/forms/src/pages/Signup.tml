@@ -1,0 +1,26 @@
+<div>
+  <h1>Sign up</h1>
+  <form t:type="form" t:id="form">
+    <t:errors/>
+    <p>
+      <label>Name <input t:type="textfield" t:id="name" t:validate="required,minlength=2"/></label>
+    </p>
+    <p>
+      <label>Email <input t:type="textfield" t:id="email" t:validate="required,email"/></label>
+    </p>
+    <p>
+      <label>Rows <select t:type="select" t:id="rows" t:model="literal:5,10,15,20"/></label>
+    </p>
+    <p>
+      <label>Check-in <input t:type="datefield" t:id="checkin"/></label>
+    </p>
+    <p>
+      Smoking:
+      <t:radiogroup t:id="smoking">
+        <label><input t:type="radio" t:value="yes"/> Yes</label>
+        <label><input t:type="radio" t:value="no"/> No</label>
+      </t:radiogroup>
+    </p>
+    <p><input type="submit" value="Sign up" id="submit"/></p>
+  </form>
+</div>

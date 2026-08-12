@@ -1,0 +1,7 @@
+<div>
+  <h1>SubmitNotifier</h1>
+  <form t:type="form" t:id="form">
+    <t:submitnotifier/>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

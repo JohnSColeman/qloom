@@ -1,0 +1,8 @@
+<div>
+  <h1>Loop Edge</h1>
+  <ul id="single"><t:loop source="single" value="s" index="si"><li id="single_${si}">${s}</li></t:loop></ul>
+  <ul id="setlist"><t:loop source="setSource" value="setVal" index="setIdx"><li class="setrow" id="set_${setIdx}">${setVal}</li></t:loop></ul>
+  <p id="escaped"><t:loop source="escapes" value="esc" index="ei"><span class="escrow" id="esc_${ei}">${esc}</span></t:loop></p>
+  <ul id="noindex"><t:loop source="noIdx" value="niVal"><li class="ni">${niVal}</li></t:loop></ul>
+  <ul id="biglist"><t:loop source="big" value="bigVal" index="bigIdx"><li class="big" id="big_${bigIdx}">${bigVal}</li></t:loop></ul>
+</div>

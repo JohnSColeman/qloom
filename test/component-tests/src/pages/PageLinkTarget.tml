@@ -1,0 +1,4 @@
+<div>
+  <h1>PageLink Target</h1>
+  <p id="result">${result}</p>
+</div>

@@ -1,0 +1,4 @@
+<div>
+  <h1>Cleanup on throw</h1>
+  <t:cleanupprobe>body</t:cleanupprobe>
+</div>

@@ -1,0 +1,5 @@
+<div>
+  <h1>ZoneRefresh</h1>
+  <div t:type="zone" t:id="clock" t:mixins="zonerefresh" t:period="0.2">Tick: <span id="tick">${tick}</span></div>
+  <a href="#" t:type="pagelink" t:page="environmental" id="leave">leave</a>
+</div>

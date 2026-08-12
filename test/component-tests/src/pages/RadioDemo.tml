@@ -1,0 +1,10 @@
+<div>
+  <h1>Radio / RadioGroup</h1>
+  <form t:type="form" t:id="form">
+    <t:radiogroup t:id="choice">
+      <label><input t:type="radio" t:value="yes"/> Yes</label>
+      <label><input t:type="radio" t:value="no"/> No</label>
+    </t:radiogroup>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

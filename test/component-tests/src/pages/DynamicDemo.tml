@@ -1,0 +1,7 @@
+<div>
+  <h1>Dynamic</h1>
+  <div t:type="dynamic" t:template="fragment" id="host"></div>
+  <div t:type="dynamic" id="empty-host"></div>
+  <div t:type="dynamic" t:template="rich" id="rich-host"></div>
+  <div t:type="dynamic" t:template="hostile" id="hostile-host"></div>
+</div>

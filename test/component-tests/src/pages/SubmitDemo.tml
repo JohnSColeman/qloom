@@ -1,0 +1,7 @@
+<div>
+  <h1>Submit</h1>
+  <form t:type="form" t:id="form">
+    <input t:type="textfield" t:id="name"/>
+    <input t:type="submit" t:id="go" t:value="literal:Save"/>
+  </form>
+</div>

@@ -1,0 +1,4 @@
+<div>
+  <h1>OutputRaw</h1>
+  <p id="raw"><span t:type="outputraw" t:value="markup"></span></p>
+</div>

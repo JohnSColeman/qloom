@@ -1,0 +1,9 @@
+<div>
+  <h1>TextArea Validate</h1>
+  <form t:type="form" t:id="form">
+    <t:errors/>
+    <label>Bio <textarea t:type="textarea" t:id="bio" t:validate="required,minlength=5" placeholder="min 5"></textarea></label>
+    <label>Note <textarea t:type="textarea" t:id="note"></textarea></label>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

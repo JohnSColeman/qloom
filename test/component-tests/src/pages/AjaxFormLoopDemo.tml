@@ -1,0 +1,12 @@
+<div>
+  <h1>AjaxFormLoop</h1>
+  <form t:type="form" t:id="form">
+    <t:ajaxformloop t:id="loop" t:source="items" t:value="item">
+      <span class="row">
+        <input t:type="textfield" t:id="itemField" t:value="item"/>
+        <a t:type="removerowlink" class="remove-row" href="#">Remove</a>
+      </span>
+    </t:ajaxformloop>
+    <a t:type="addrowlink" id="add-row" href="#">Add row</a>
+  </form>
+</div>

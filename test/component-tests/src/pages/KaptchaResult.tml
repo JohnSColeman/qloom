@@ -1,0 +1,4 @@
+<div>
+  <h1>Kaptcha Result</h1>
+  <p id="verdict">Verified</p>
+</div>

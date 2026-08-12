@@ -1,0 +1,12 @@
+<div>
+  <h1>If / Unless / Delegate</h1>
+  <p id="if-then"><t:if test="truthy">shown<p:else>hidden</p:else></t:if></p>
+  <p id="if-else"><t:if test="falsy">shown<p:else>fallback</p:else></t:if></p>
+  <p id="unless-false"><t:unless test="falsy">false is rendered</t:unless></p>
+  <p id="unless-true"><t:unless test="truthy"></t:unless></p>
+  <p id="if-negate-else"><t:if test="truthy" negate="truthy">then<p:else>else-shown</p:else></t:if></p>
+  <p id="if-negate-then"><t:if test="falsy" negate="truthy">then-shown<p:else>else</p:else></t:if></p>
+  <p id="if-noelse-false"><t:if test="falsy">nope</t:if></p>
+  <p id="if-noelse-true"><t:if test="truthy">yep</t:if></p>
+  <p id="unless-escaped"><t:unless test="falsy">${special}</t:unless></p>
+</div>

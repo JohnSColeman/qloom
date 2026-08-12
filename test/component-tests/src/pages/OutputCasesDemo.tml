@@ -1,0 +1,13 @@
+<div>
+  <h1>Output cases</h1>
+  <p id="out-num"><span t:type="output" t:value="num"></span></p>
+  <p id="out-zero"><span t:type="output" t:value="zero"></span></p>
+  <p id="out-flag"><span t:type="output" t:value="flag"></span></p>
+  <p id="out-null"><span t:type="output" t:value="nothing"></span></p>
+  <p id="out-blank"><span t:type="output" t:value="blank"></span></p>
+  <p id="out-html"><span t:type="output" t:value="html"></span></p>
+  <a href="#" t:type="eventlink" t:event="poison" t:zone="poisonZone" id="out-poison">poison</a>
+  <t:zone t:id="poisonZone">
+    <p id="out-poisoned"><span t:type="output" t:value="poisoned"></span></p>
+  </t:zone>
+</div>

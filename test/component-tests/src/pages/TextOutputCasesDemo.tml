@@ -1,0 +1,7 @@
+<div>
+  <h1>TextOutput cases</h1>
+  <div id="to-single"><span t:type="textoutput" t:value="single"></span></div>
+  <div id="to-blank"><span t:type="textoutput" t:value="blank"></span></div>
+  <div id="to-html"><span t:type="textoutput" t:value="html"></span></div>
+  <div id="to-null"><span t:type="textoutput" t:value="nothing"></span></div>
+</div>

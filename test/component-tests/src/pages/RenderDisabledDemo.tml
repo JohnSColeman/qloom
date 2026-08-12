@@ -1,0 +1,5 @@
+<div>
+  <h1>RenderDisabled mixin</h1>
+  <input t:type="textfield" t:id="off" t:disabled="true"/>
+  <input t:type="textfield" t:id="on"/>
+</div>

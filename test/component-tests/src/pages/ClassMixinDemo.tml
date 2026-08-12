@@ -1,0 +1,6 @@
+<div>
+  <h1>@Mixin</h1>
+  <t:automarked/>
+  <t:mergedthing t:mixins="marktwo"/>
+  <t:orderedthing/>
+</div>

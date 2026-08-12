@@ -1,0 +1,7 @@
+<div>
+  <h1>Kaptcha</h1>
+  <form t:type="form" t:id="form">
+    <label>Enter text <t:kaptchafield t:id="fcaptcha"/></label>
+    <t:kaptchaimage t:id="kaptcha"/>
+  </form>
+</div>

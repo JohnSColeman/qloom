@@ -1,0 +1,5 @@
+<div>
+  <h1>Element-form informal attribute</h1>
+  <t:textfield t:id="name" placeholder="Your name" title="Enter your full name"/>
+  <input t:type="passwordfield" t:id="secret" placeholder="Password" data-testid="pw" maxlength="12"/>
+</div>

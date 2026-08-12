@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.qloom/
+*.tsbuildinfo
+.vite/
+.DS_Store
+*.log
+coverage/
+playwright-report/
+test-results/
+.playwright/
+
+# Editor / tool state (personal, not shared)
+.idea/
+.claude/

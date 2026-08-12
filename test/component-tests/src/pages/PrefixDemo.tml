@@ -1,0 +1,7 @@
+<div>
+  <h1 id="pt-h">defaultPrefix</h1>
+  <!-- default: mode is literal-default ("cancel"), label is prop-default (reads greeting="Hi") -->
+  <p id="row-default"><span t:type="prefixthing" t:mode="cancel" t:label="greeting"/></p>
+  <!-- explicit prefixes override the defaults: mode=prop reads greeting, label=literal is raw -->
+  <p id="row-explicit"><span t:type="prefixthing" t:mode="prop:greeting" t:label="literal:Lit"/></p>
+</div>

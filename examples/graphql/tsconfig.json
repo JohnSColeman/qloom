@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": false,
+    "noEmit": true,
+    "types": ["vite/client"],
+    "paths": {
+      "@dal/*": ["./.qloom/dal/*"]
+    }
+  },
+  "include": ["src", "dal", "vite.config.ts"]
+}

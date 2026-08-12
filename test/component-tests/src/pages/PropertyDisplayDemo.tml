@@ -1,0 +1,4 @@
+<div>
+  <h1>PropertyDisplay</h1>
+  <p id="pd"><span t:type="propertydisplay" t:object="hotel" t:property="name"></span></p>
+</div>

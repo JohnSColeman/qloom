@@ -1,0 +1,7 @@
+<div>
+  <h1>Alerts (dynamic)</h1>
+  <a href="#" t:type="eventlink" t:event="addInfo" id="add-info">Add info</a>
+  <a href="#" t:type="eventlink" t:event="addError" id="add-error">Add error</a>
+  <a href="#" t:type="eventlink" t:event="clearAlerts" id="clear-alerts">Clear</a>
+  <div t:type="alerts" id="alerts"></div>
+</div>

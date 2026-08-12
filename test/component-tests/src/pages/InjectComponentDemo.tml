@@ -1,0 +1,10 @@
+<div>
+  <h1>InjectComponent</h1>
+  <form t:type="form" t:id="probe" t:zone="out">
+    <span t:type="marker" t:id="widget"/>
+    <input type="submit" value="Go"/>
+  </form>
+  <t:zone t:id="out">
+    <p id="result">${result}</p>
+  </t:zone>
+</div>

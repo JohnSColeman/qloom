@@ -1,0 +1,7 @@
+<div>
+  <h1>Hidden</h1>
+  <form t:type="form" t:id="form">
+    <input t:type="hidden" t:id="token"/>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

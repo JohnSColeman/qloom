@@ -1,0 +1,10 @@
+<div>
+  <h1>Loop of fields in a form</h1>
+  <form t:type="form" t:id="form" t:zone="out">
+    <t:loop t:source="rows" t:value="row">
+      <input t:type="textfield" t:value="row.name" class="rn"/>
+    </t:loop>
+    <input type="submit" id="save" value="Save"/>
+  </form>
+  <t:zone t:id="out"><span id="result">${joined}</span></t:zone>
+</div>

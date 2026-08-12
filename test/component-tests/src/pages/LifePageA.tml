@@ -1,0 +1,4 @@
+<div>
+  <h1 id="a">Page A</h1>
+  <a href="#" t:type="pagelink" t:page="life-b" id="to-b">to B</a>
+</div>

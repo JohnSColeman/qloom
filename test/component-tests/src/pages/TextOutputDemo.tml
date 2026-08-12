@@ -1,0 +1,4 @@
+<div>
+  <h1>TextOutput</h1>
+  <div id="textout"><span t:type="textoutput" t:value="text"></span></div>
+</div>

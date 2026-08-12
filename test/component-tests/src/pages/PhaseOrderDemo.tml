@@ -1,0 +1,4 @@
+<div>
+  <t:phaserec>body</t:phaserec>
+  <p id="order">${order}</p>
+</div>

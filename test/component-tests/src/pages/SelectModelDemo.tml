@@ -1,0 +1,8 @@
+<div>
+  <h1>Select Model</h1>
+  <form t:type="form" t:id="form">
+    <label>Fruit <select t:type="select" t:id="fruit" t:model="fruits"/></label>
+    <label>Empty <select t:type="select" t:id="empty" t:model="emptyModel"/></label>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

@@ -1,0 +1,6 @@
+<div>
+  <a href="#" t:type="eventlink" t:event="rotate" t:zone="list" id="rotate">rotate</a>
+  <a href="#" t:type="eventlink" t:event="insert" t:zone="list" id="insert">insert</a>
+  <a href="#" t:type="eventlink" t:event="remove" t:zone="list" id="remove">remove</a>
+  <t:zone t:id="list"><t:loop source="items" value="item"><span class="row" data-key="${item}"><input class="mark" name="${item}"/></span></t:loop></t:zone>
+</div>

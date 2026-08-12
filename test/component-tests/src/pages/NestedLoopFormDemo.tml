@@ -1,0 +1,12 @@
+<div>
+  <h1>Nested loop-in-form</h1>
+  <form t:type="form" t:id="form" t:zone="out">
+    <t:loop t:source="groups" t:value="group">
+      <t:loop t:source="group.items" t:value="item">
+        <input t:type="textfield" t:value="item.name" class="nn"/>
+      </t:loop>
+    </t:loop>
+    <input type="submit" id="save" value="Save"/>
+  </form>
+  <t:zone t:id="out"><span id="result">${joined}</span></t:zone>
+</div>

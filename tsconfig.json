@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/core" },
+    { "path": "packages/runtime" },
+    { "path": "packages/compiler" },
+    { "path": "packages/router" },
+    { "path": "packages/validation" },
+    { "path": "packages/components" },
+    { "path": "packages/data" },
+    { "path": "create-qloom" }
+  ]
+}

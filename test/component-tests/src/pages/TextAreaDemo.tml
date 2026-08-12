@@ -1,0 +1,7 @@
+<div>
+  <h1>TextArea</h1>
+  <form t:type="form" t:id="form">
+    <label>Message <textarea t:type="textarea" t:id="message"></textarea></label>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>

@@ -1,0 +1,7 @@
+<div>
+  <h1>Any</h1>
+  <span t:type="any" t:element="section" class="marker" id="any-el">hello</span>
+  <div t:type="any" id="any-default">defaulted</div>
+  <span t:type="any" class="a b" title="tool tip" data-role="a widget" id="any-informals">multi</span>
+  <span t:type="any" t:element="prop:tag" id="any-dynamic">dyn</span>
+</div>

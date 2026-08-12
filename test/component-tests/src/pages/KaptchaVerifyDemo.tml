@@ -1,0 +1,9 @@
+<div>
+  <h1>Kaptcha Verify</h1>
+  <form t:type="form" t:id="form">
+    <t:errors/>
+    <label>Enter text <t:kaptchafield t:id="fcaptcha"/></label>
+    <t:kaptchaimage t:id="kaptcha"/>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+</div>
