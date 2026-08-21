@@ -23,11 +23,6 @@ in-browser mock) — **try it at [johnscoleman.github.io/qloom](https://johnscol
 Log in with `JohnDoe` / `secret`, or register a new account. It's the same faithful Tapestry port
 that backs the parity gate, deployed as a static SPA.
 
-Deployment is automatic: [`.github/workflows/pages.yml`](./.github/workflows/pages.yml)
-builds the demo on every push to `main` and publishes it to GitHub Pages. To turn
-it on once, set **Settings → Pages → Source: GitHub Actions**. The workflow derives
-the base path from the repo name, so it works whatever the repository is called.
-
 ## Documentation
 
 All docs are Markdown, read them right here on GitHub.
